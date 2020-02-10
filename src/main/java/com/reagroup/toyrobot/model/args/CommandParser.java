@@ -49,7 +49,7 @@ public class CommandParser implements Function<String, Command>  {
     /**
      * Parses place command String to a executable place command object
      * @param commandString place command String
-     * @return
+     * @return executable place command object
      */
     private Command parsePlaceCommand(String commandString) {
         Matcher matcher = PLACE_REGEX.matcher(commandString);
