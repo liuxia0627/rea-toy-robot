@@ -15,7 +15,7 @@ abstract class AbstractCommand implements Command{
         if(state == null){
             return null;
         }
-        return this.applyInternal(state);
+        return this.transit(state);
     }
 
     /**
@@ -24,5 +24,5 @@ abstract class AbstractCommand implements Command{
      * @param state the input state
      * @return the updated state
      */
-    protected abstract State applyInternal(State state);
+    protected abstract State transit(State state);
 }

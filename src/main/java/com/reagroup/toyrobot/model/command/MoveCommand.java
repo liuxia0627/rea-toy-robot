@@ -8,7 +8,7 @@ public class MoveCommand extends AbstractCommand {
     private final static Logger LOGGER = Logger.getLogger(MoveCommand.class.getName());
 
     @Override
-    protected State applyInternal(State state) {
+    protected State transit(State state) {
         switch (state.orientation()){
             case NORTH:
                 return new State(state.position().x(), state.position().y()+1, state.orientation());

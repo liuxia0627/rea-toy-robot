@@ -8,7 +8,7 @@ import com.reagroup.toyrobot.model.state.State;
 
 public class NullCommand extends  AbstractCommand{
     @Override
-    public State applyInternal(State state) {
+    public State transit(State state) {
         return state;
     }
 }
