@@ -56,6 +56,7 @@ public class InputArgs implements Function<String[], Stream<String>> {
 
         System.out.println("Please enter the proper commands to start Toy Robot Simulator");
         System.out.println("Command line should be entered per line.");
+        System.out.println("To complete the commands and execute the simulator, please type 'CTRL + D' in Unix or 'CTRL + Z' + 'Enter' in Windows.");
         System.out.println();
 
         while(scanner.hasNext()){
